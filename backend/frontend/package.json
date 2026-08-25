@@ -1,1 +1,46 @@
+/mnt/user-data/outputs/frontend/  ← WHOLE FOLDER IS HERE!
 
+Inside:
+├── src/ (all React/Vue code)
+├── package.json
+├── vite.config.ts
+├── index.html
+└── everything else{
+  "name": "vita-learning-backend",
+  "version": "1.0.0",
+  "description": "Vita Learning - Node.js LMS Backend",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migrate": "node dist/database/migrate.js",
+    "test": "jest",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.2",
+    "redis": "^4.6.10",
+    "jsonwebtoken": "^9.1.0",
+    "bcryptjs": "^2.4.3",
+    "axios": "^1.5.0",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/bcryptjs": "^2.4.6",
+    "ts-node-dev": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0"
+  }
+}
